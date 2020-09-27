@@ -1,7 +1,6 @@
 ---
 title: "Highrise-Residential-Fire-Inspection-Results"
 author: "YiWenJiang"
-date: 2020-09-27T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
