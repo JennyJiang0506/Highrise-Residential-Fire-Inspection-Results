@@ -1,0 +1,75 @@
+---
+title: "Highrise-Residential-Fire-Inspection-Results"
+author: "YiWenJiang"
+date: 2020-09-27T21:13:14-05:00
+biliography: "references.bib"
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+# Abstract
+High-rise residential fire inspection results usually have several attributes among them the location of the buildings. Opening of an inspection is usually done to assess the compliance of the buildings to the Ontario Fire Code. Closing of an inspection is done after the inspector ensures that the measures have been implemented to uphold the fire code. The data contains the closing date of an inspection meaning ongoing inspections are not recorded
+
+
+
+# Introduction
+
+
+Urbanization and development of the modernized high-rise residential buildings have emerged due to increase in population and land price. High rise buildings develop in the direction of modernization making it difficult to put off fires from outside and to evacuate casualties from high floors and complex functions. Due to these scenarios there has been more casualty accidents and greater economic loss (Toronto et al., 2020).
+The three major characteristics of high-rise buildings are complex structures, high population density with complicated functions and multiple combustibles and a large fire load. From the characteristics we can deduce that it is difficult to evacuate the fire spreads quickly within the high-rise residential buildings and putting out the fire is difficult. One major problem is the fireproof of the high-rise buildings (K. Chow and Y. Gao, 2000).
+With regards to the above information, inspections of the buildings should be done to ensure compliance with the Ontario Fire Code. Compliance will result to fast evacuation in case of fires and less casualty accidents. High-rise residential buildings which will be found to be in violation of the fire code have implement various measures to correct the issues. Follow up should also be done by the inspectors to ensure that the measures are implemented (Toronto et al., 2020).
+
+# Description of dataset
+
+
+The dataset indicates properties as classified with regards to the Ontario Fire code.
+The properties found within the violation of the Ontario Fire Code should be fixed so as to meet the compliance requirements of the state. The properties that have not violated the fire code havealso been recorded and the status of the property is also recorded (Municipal Licensing & Standards, 2020).
+The dataset contains only data with closed cases, denoted as closed cases indicating that the inspection process has already been completed for the specific buildings. The date of commencement of the inspection is denoted as “inspections. OpenedDate” while the date when the inspection was finished is denoted as “Inspections.ClosedDate”
+Other attributes are the latitude and longitude which indicate the spatial property of the data. The latitude and longitude show the locations of the high-rise property within Toronto. The property address is a recording of the physical address of the buildings (Municipal Licensing & Standards, 2020).
+Other attributes include the id, property ward and violation description as well as the violation fire code.
+![1.png](https://raw.githubusercontent.com/JennyJiang0506/image/master/1.png)
+
+
+# Graph
+
+![2.png](https://raw.githubusercontent.com/JennyJiang0506/image/master/2.png)
+
+# Discussion
+
+The graph shows the latitude against the closing dates of the inspection programs during the year 2020.In some specific locations several high-rise residential buildings had already been inspected and the date TFS closed inspection file had already been recorded.
+The regions with the greatest number of recorded closing dates can be inferred to have most high-rise buildings which are compliant with the Ontario Fire Code or at least have adopted measures to ensure compliance with the Ontario Fire Code. The locations which low number of recorded closing dates can be inferred to have lesser high-rise buildings which are compliant with the Ontario Fire Code.
+Comparison of the opening date of inspection as compared to the closing date of the inspections
+can illustrate the duration that an individual building takes to put p the measures and practices so as to ensure compliance with the fire code.
+Using the results, inspectors can also identify the locations that have already been inspected and therefore planning can be done to inspect regions that are not recorded.
+
+
+# Weaknesses
+
+
+1. The data does not indicate any recommendations for the violations.
+2. The data does not include pictures and images of the buildings.
+3. Pictures can help in visual analysis of the building conditions.
+4. The information within the data is subject to change by the city without notice therefore data accuracy cannot be ensured over several years.
+5. The graph does not directly account for the violations
+
+
+# Next steps
+
+1. Recommendations can be provided to help building owners in making corrections 
+ 
+2. Pictorials and images can be included as auxiliary data 
+
+
+# References
+
+
+Toronto, C., Government, C., Accountability, O., Records, A. and Results, H., 2020. Highrise Residential Fire Inspection Results. [online] City of Toronto. Available at: <https:// www.toronto.ca/city-government/accountability-operations-customer-service/access-city- information-or-records/fire-prevention-inspection-results-for-high-rise-residential- buildings/ #listing/eyJxdWVyeVN0cmluZyI6IiIsInRvcCI6MTB9/1> [Accessed 25 September 2020].
+K. Chow and Y. Gao, W., 2000. Numerical Studies on Fire-Induced Flow in a Highrise Residential Building. Journal of Applied Fire Science, 9(3), pp.275-301.
+Municipal Licensing & Standards, M., 2020. CKAN. [online] Ckan0.cf.opendata.inter.prod- toronto.ca. Available at: <https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/highrise- residential-fire-inspection-results/resource/679afc94-f5fa-449f-ac41-2a4aa317740d/view/ 9537558b-eb25-413e-82ef-7853299a4d3b> [Accessed 25 September 2020].
+
+
+
+
